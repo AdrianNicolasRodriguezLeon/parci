@@ -3,7 +3,7 @@ def suma(a,b,c,d,e):   #definir variables
     total= a+b+c+d+e
     return total
 
-
+# ingresar los datos enteros
 entero1= int(input("ingrese un  numero: "))
 entero2= int(input("ingrese un  numero: "))
 entero3= int(input("ingrese un  numero: "))
@@ -12,6 +12,7 @@ entero5= int(input("ingrese un  numero: "))
 
 
 #condicionales
+# si los enteros son diferentes de 2 y negativos se definnen como 0 para no afectar la suma 
 if entero1 % 2 != 0 or entero1 < 0:
         entero1=0
 if entero2 % 2 != 0 or entero1 < 0:
@@ -24,7 +25,7 @@ if entero4 % 2 != 0 or entero1 < 0:
 
 if entero5 % 2 != 0 or entero1 < 0:
         entero5=0
-#impresion
+#impresion 
 print (f"la suma de los positivos y pares es {suma(entero1,entero2,entero3,entero4,entero5)}")
 
 
@@ -43,6 +44,8 @@ if edad >= 60:
     print("Es adulto mayor")
 
 ##ciclo
+
+#en caso que se ingrese una edad negativa se vuelve a repetir el programa
 while edad< 0:
     print ("numero negativo. Vuelva ingresar la edad")
     edad= int(input("ingrese la edad de la persona "))
